@@ -1,0 +1,14 @@
+<img src='item.image_url'>
+
+<h1>Name-{{ item.title}}</h1>
+<h3>Category-{{ item.category }}</h3>
+
+<ul>
+	
+	<li>Price - {{ item.price }}</li>
+	
+</ul>
+
+{% if error_messege %}
+	<p><strong>{{ errror_messege }}</p>>
+{% endif %}

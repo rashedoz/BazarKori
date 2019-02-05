@@ -1,0 +1,16 @@
+{% if search %}
+
+<ul>
+	<h2>Searched Product List</h2>
+	{% for item in search %}
+	
+
+	<li> <a href="{% url 'detail' item.id %}">{{ item.title }}</a></li>
+
+	{% endfor %}
+</ul>
+{% else %}
+
+<h2>No Search Matched</h2>
+
+{% endif %} 

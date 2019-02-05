@@ -1,0 +1,7 @@
+We can  run, test our project in docker container.
+Since we will use python library module 'unittest' for unit testing.
+
+We will  make docker image of our django web application project after finishing the project.
+
+This is not a difficult task.
+

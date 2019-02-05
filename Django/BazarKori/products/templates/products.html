@@ -1,0 +1,16 @@
+{% if all_products %}
+
+<ul>
+	<h2>Here's Product List</h2>
+	{% for item in all_products %}
+	
+
+	<li> <a href="{% url 'detail' item.id %}">{{ item.title }}</a></li>
+
+	{% endfor %}
+</ul>
+{% else %}
+
+<h2>No product Available</h2>
+
+{% endif %} 
