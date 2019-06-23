@@ -30,8 +30,8 @@ from products.views import *
 urlpatterns = [
 	path('',TemplateView.as_view(template_name='home.html'),name='home'),
 
-    path('login/', auth_views.login, name='login'),
-    path('logout/', auth_views.logout, name='logout'),
+    path('login/', auth_views.LoginView, name='login'),
+    path('logout/', auth_views.LogoutView, name='logout'),
     path('oauth/', include('social_django.urls', namespace='social')),
 	path('admin/', admin.site.urls),
     path('accounts/',include('accounts.urls')),
